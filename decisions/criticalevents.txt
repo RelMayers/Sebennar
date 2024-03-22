@@ -5,10 +5,11 @@ critical_events = {
 		potential = {
 			ai = no
 		}
-		ai_will_do = {
-			factor = 0
-		}
+#		ai_will_do = {
+#			factor = 0	#no need to even have that
+#		}
 		allow = {
+			always = no  ### checks are sequential
 			custom_trigger_tooltip = {
 				tooltip = Radical
 				NOT = { has_country_flag = radical_mercantilist_reforms }
@@ -25,7 +26,6 @@ critical_events = {
 				tooltip = Captain
 				NOT = { has_country_flag = grand_captain }
 			}
-			always = no
 		}
 		effect = {
 		}

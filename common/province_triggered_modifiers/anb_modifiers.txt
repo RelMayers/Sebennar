@@ -8,25 +8,27 @@
 ###########################################
 # Just random test modifier
 ###########################################
-hold_has_parliament = {
-	potential = {
-		owner = { has_parliament = yes }
-	}
+#hold_has_parliament = {
+#	potential = {
+#		owner = { has_parliament = yes }
+#	}
+#
+#	trigger = {
+#		has_seat_in_parliament = yes
+#	}
+#	picture = "hold_has_parliament"
+#	min_local_autonomy = -30
+#
+#	#Province scope
+#	on_activation = {
+#	}
+#
+#	on_deactivation = {
+#	}
+#}
+# Do we need this?
 
-	trigger = {
-		has_seat_in_parliament = yes
-	}
-	picture = "hold_has_parliament"
-	min_local_autonomy = -30
-
-	#Province scope
-	on_activation = {
-	}
-
-	on_deactivation = {
-	}
-}
-
+#this should be moved into on_action...
 abundant_woods = {
 	potential = {
 		NOT = { owner = { has_country_flag = cyranvar_expert_artisan } }
@@ -47,6 +49,7 @@ abundant_woods = {
 	}
 }
 
+#this as well...
 abundant_woods_cyranvar = {
 	potential = {
 		owner = { has_country_flag = cyranvar_expert_artisan }
@@ -68,6 +71,7 @@ abundant_woods_cyranvar = {
 	}
 }
 
+#hmmm... might be doable to move as well... (need to check anbennar bitbucket)
 no_subterannean_race = {
 	potential = {
 		always = yes
@@ -91,6 +95,7 @@ no_subterannean_race = {
 	}
 }
 
+#definetly to on_action
 flooded_province = {
 	potential = {
 		always = yes
@@ -117,6 +122,7 @@ flooded_province = {
 	}
 }
 
+#find source of this
 efficient_irrigation = {
 	potential = {
 		always = yes
@@ -136,6 +142,7 @@ efficient_irrigation = {
 	}
 }
 
+#probably into on_Action
 gold_hold = {
 	potential = {
 		trade_goods = gold
@@ -193,12 +200,16 @@ ziggurat_of_surakel_modifier = {
 	on_deactivation = {
 	}
 }
-
+# low performance impact compare to how probably it'll be hard to move
 harpy_roost = {
 	picture = "harpy_roost"
 	potential = {
-		OR = { has_terrain = mountain has_terrain = highlands has_terrain = hills }
+		always = yes
 	}
+	#potential = {
+	#	OR = { has_terrain = mountain has_terrain = highlands has_terrain = hills }
+	#}
+	# potential not needed
 
 	trigger = {
 		fort_level = 1
@@ -356,88 +367,11 @@ jaddari_the_mountain_of_clear_sight = {
 	}
 }
 
-federation_unlawful_occupation = {
-	potential = {
-		NOT = { has_global_flag = lake_federation_disbanded }
-		NOT = { has_global_flag = lake_federation_formed }
-		owner = { has_country_modifier = lake_federation_member }
-	}
+#can be re added if lake fed is re added
+#federation_unlawful_occupation 
+#federation_cohesion_triggers 
 
-	trigger = {
-		owner = {
-			OR = {
-				NOT = {
-					OR = {
-						tag = J06
-						tag = J07
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = lawful_ultakal_tooltip
-					has_country_flag = unlawful_ultakal
-				}
-				custom_trigger_tooltip = {
-					tooltip = unlawful_ultakal_tooltip
-					has_global_flag = unlawful_ultakal
-				}
-			}
-		}
-	}
-	# picture = "federation_unlawful_occupation"
-	diplomatic_reputation = -1.5
-	prestige = -0.25
-
-	#Province scope
-	on_activation = {
-	}
-
-	on_deactivation = {
-	}
-}
-
-federation_cohesion_triggers = {
-	hidden = yes
-	potential = {
-		NOT = { has_global_flag = lake_federation_disbanded }
-		NOT = { has_global_flag = lake_federation_formed }
-	}
-
-	trigger = {
-		has_global_flag = lake_cohesion_1
-	}
-
-	#Province scope
-	on_activation = {
-		if = {
-			limit = { owner = { has_country_modifier = lake_federation_member } }
-			owner = { country_event = { id = splintering.1 } }
-		}
-		else = {
-			random_country = {
-				limit = { has_country_modifier = lake_federation_member }
-				country_event = { id = splintering.1 }
-			}
-		}
-	}
-
-	on_deactivation = {
-		if = {
-			limit = {
-				NOT = {
-					has_global_flag = lake_cohesion_5
-					has_global_flag = lake_cohesion_4
-					has_global_flag = lake_cohesion_3
-					has_global_flag = lake_cohesion_2
-				}
-			}
-			every_country = {
-				limit = { has_country_modifier = lake_federation_member }
-				country_event = { id = lake.39 }
-			}
-		}
-	}
-}
-
+#this also to on_action
 swamp_stilts_1 = {
 	potential = {
 		always = yes
@@ -805,6 +739,7 @@ castanor_river_support = {
 	}
 }
 
+#......#
 # Legion maintenance modifier setup - for Castanor
 castanor_legions_1_maintenance_triggered = {
     potential = {
@@ -2184,7 +2119,7 @@ ghavaanaj_monthly_tick = {
 		event_target:ghavaanaj_herd_country = { country_event = { id = ghavaanaj.2002 } }
 	}
 }
-
+# is this necessary?
 sharaajaghal_games_tick = {
 	potential = {
 		NOT = { has_province_flag = sharaajaghal_games_finished }
@@ -2725,7 +2660,7 @@ corintar_corinsfall_memorial = {
 	}
 }
 
-
+# this needs to go, it definetly can be handled by pulse
 azkare_parliament_calculations_pulse = {
 	potential = {
 		always = yes

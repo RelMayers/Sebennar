@@ -6513,9 +6513,12 @@ on_yearly_pulse = {
 		limit = { tag = I16 } 
 		country_event = { id = flavour_gor_burad.60 }
 	}
+	
+}
+on_yearly_pulse_2 = {
 	################################### Artificery ###################################
 	#Failsave
-	country_event = {
+		country_event = {
 		id = anbennar_setup.19
 	}
 	#Research
@@ -6549,8 +6552,6 @@ on_yearly_pulse = {
 		}
 	}
 	################################### Artificery End ###################################
-}
-on_yearly_pulse_2 = {
 }
 on_yearly_pulse_3 = {
 }
