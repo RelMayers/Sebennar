@@ -33,6 +33,7 @@ clstc_oligarchy = {
 		global_trade_goods_size_modifier = 0.10
 		candidate_random_bonus = 1
 	}
+	lock_level_when_selected = yes
 	valid_for_nation_designer = no
 	legacy_equivalent = venetian_merchant_republic
 	potential = {
@@ -76,6 +77,7 @@ clstc_oligarchy = {
 		election_on_death = yes
 		elections_increase_factions_influence = yes
 		bonus_stats_for_elected_ruler = yes
+		locked_government_type = yes
 	}
 	has_term_election = no
 }

@@ -41,6 +41,7 @@ pyramids_of_khet = {
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
+						culture = hapremiti
 					}
 			}
 			province_is_or_accepts_culture = yes
@@ -163,6 +164,7 @@ koroshesh_grain_port = {
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
+						culture = hapremiti
 					}
 			}
 			province_is_or_accepts_culture = yes
@@ -282,6 +284,7 @@ zornartakel_naval_harbor = {
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
+						
 					}
 			}
 			province_is_or_accepts_culture = yes
@@ -430,6 +433,7 @@ deshak_temple_of_the_elements = {
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
+						culture = desha
 					}
 			}
 			province_is_or_accepts_culture = yes
@@ -556,6 +560,7 @@ ekha_harbor = {
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
+						culture = far_akasi
 					}
 			}
 			province_is_or_accepts_culture = yes
@@ -914,5 +919,718 @@ dasmati_halls_of_reverence = {
 		}
 		on_upgraded = {
 		}
+	}
+}
+#Worm Pit 
+worm_pit = {
+	start = 6848
+	date = 01.01.1800
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 1
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+		province_id = 6848
+	}
+	on_built = {
+	}
+	on_destroyed = {	
+	}
+	can_use_modifiers_trigger = {
+		
+	}	
+	can_upgrade_trigger = {
+		
+	}	
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {	
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 200
+		}
+		province_modifiers = {
+			trade_goods_size = 2.0
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			trade_goods_size = 4.0
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = { 
+				  mission_completed = V11_the_great_nurturing 
+				}
+			}
+			modifier = {
+				development_cost = -0.075
+			}
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			trade_goods_size = 6.0
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = { 
+				  mission_completed = V11_the_great_nurturing 
+				}
+			}
+			modifier = {
+				development_cost = -0.075
+			}
+		}
+		on_upgraded = {
+		}
+	}
+}
+emberscar_dwarovar_tunnel = {
+
+	# province it starts in
+	start = 6830
+
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1855.06.20
+
+	#time to build
+	time = { months = 180 }
+
+	#how much to build one
+	build_cost = 3000
+
+	#can we move it?
+	can_be_moved = no
+
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 0
+
+	#project type
+	type = canal
+
+	#can we build it?
+	build_trigger = {
+	owner = { mission_completed = V11_dwarovar_awakening	
+	}
+		FROM = {
+			owns_or_vassal_of = 6830
+			is_subject = no
+			adm_tech = 10
+			
+		}
+		NOT = { 6830 = { has_great_project = { type = emberscar_dwarovar_tunnel } } }
+	}
+
+	#what to do when it's built
+	on_built = {
+		add_canal = emberscar_dwarovar_tunnel
+		set_global_flag = emberscar_dwarovar_tunnel_opened
+		
+	}
+
+	#what to do when it's destroyed
+	on_destroyed = {
+		remove_canal = emberscar_dwarovar_tunnel
+		clr_global_flag = emberscar_dwarovar_tunnel_opened
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = { NOT = { 6830 = { has_great_project = { type = emberscar_dwarovar_tunnel } } } }
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 0 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 0 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 120 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 1000 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = { 
+			province_trade_power_value = 20 
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = { global_trade_power = 0.02 }
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 120 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 1000 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			province_trade_power_value = 30
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			global_trade_power = 0.03
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 120 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 1000 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			province_trade_power_value = 50
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			global_trade_power = 0.05
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+}
+
+emberscar_dwarovar_tunnel = {
+
+	# province it starts in
+	start = 4287
+
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1855.06.20
+
+	#time to build
+	time = { months = 180 }
+
+	#how much to build one
+	build_cost = 3000
+
+	#can we move it?
+	can_be_moved = no
+
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 0
+
+	#project type
+	type = canal
+
+	#can we build it?
+	build_trigger = {
+	owner = { mission_completed = V11_dwarovar_awakening	
+	}
+		FROM = {
+			owns_or_vassal_of = 4287
+			is_subject = no
+			}
+		NOT = { 4287 = { has_great_project = { type = emberscar_dwarovar_tunnel } } }
+	}
+
+	#what to do when it's built
+	on_built = {
+		add_canal = emberscar_dwarovar_tunnel
+		set_global_flag = emberscar_dwarovar_tunnel_opened
+		
+	}
+
+	#what to do when it's destroyed
+	on_destroyed = {
+		remove_canal = emberscar_dwarovar_tunnel
+		clr_global_flag = emberscar_dwarovar_tunnel_opened
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = { NOT = { 4287 = { has_great_project = { type = emberscar_dwarovar_tunnel } } } }
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 0 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 0 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 120 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 1000 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = { 
+			province_trade_power_value = 20 
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = { global_trade_power = 0.02 }
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 120 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 1000 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			province_trade_power_value = 30
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			global_trade_power = 0.03
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 120 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 1000 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			province_trade_power_value = 50
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			global_trade_power = 0.05
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+}
+
+emberscar_command_tunnel = {
+
+	# province it starts in
+	start = 6821
+
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1855.06.20
+
+	#time to build
+	time = { months = 180 }
+
+	#how much to build one
+	build_cost = 250
+
+	#can we move it?
+	can_be_moved = no
+
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 0
+
+	#project type
+	type = canal
+
+	#can we build it?
+	build_trigger = {
+	owner = { mission_completed = V11_hobgoblin_expedition	
+	}
+		FROM = {
+			owns_or_vassal_of = 6821
+			is_subject = no
+			adm_tech = 10
+		}
+		NOT = { 6821 = { has_great_project = { type = emberscar_command_tunnel } } }
+	}
+
+	#what to do when it's built
+	on_built = {
+		add_canal = emberscar_command_tunnel
+		
+		
+	}
+
+	#what to do when it's destroyed
+	on_destroyed = {
+		remove_canal = emberscar_command_tunnel
+		
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = { NOT = { 6830 = { has_great_project = { type = emberscar_command_tunnel } } } }
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 0 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 0 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 120 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 1000 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = { 
+			province_trade_power_value = 20 
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = { global_trade_power = 0.02 }
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 120 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 1000 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			province_trade_power_value = 30
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			global_trade_power = 0.03
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 120 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 1000 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			province_trade_power_value = 50
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			global_trade_power = 0.05
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+}
+
+emberscar_command_tunnel = {
+
+	# province it starts in
+	start = 4533
+
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1855.06.20
+
+	#time to build
+	time = { months = 180 }
+
+	#how much to build one
+	build_cost = 250
+
+	#can we move it?
+	can_be_moved = no
+
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 0
+
+	#project type
+	type = canal
+
+	#can we build it?
+	build_trigger = {
+	owner = { mission_completed = V11_hobgoblin_expedition	
+	}
+		FROM = {
+			owns_or_vassal_of = 4533
+			is_subject = no
+			adm_tech = 10
+		}
+		NOT = { 4533 = { has_great_project = { type = emberscar_command_tunnel } } }
+	}
+
+	#what to do when it's built
+	on_built = {
+		add_canal = emberscar_command_tunnel
+		set_global_flag = emberscar_command_tunnel
+		
+	}
+
+	#what to do when it's destroyed
+	on_destroyed = {
+		remove_canal = emberscar_command_tunnel
+		clr_global_flag = emberscar_command_tunnel
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = { NOT = { 4533 = { has_great_project = { type = emberscar_command_tunnel } } } }
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 0 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 0 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 120 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 1000 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = { 
+			province_trade_power_value = 20 
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = { global_trade_power = 0.02 }
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 120 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 1000 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			province_trade_power_value = 30
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			global_trade_power = 0.03
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = { months = 120 }
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = { factor = 1000 }
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			province_trade_power_value = 50
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			global_trade_power = 0.05
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {}
 	}
 }

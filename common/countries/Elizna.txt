@@ -10,7 +10,7 @@ color = { 104  128  177 }
 historical_idea_groups = {
 	economic_ideas
 	offensive_ideas
-	exploration_ideas
+	
 	defensive_ideas	
 	administrative_ideas	
 	maritime_ideas
@@ -129,9 +129,31 @@ monarch_names = {
 	"Varilor #0" = 0
 	"Vindal #0" = 0
 
+	"Jahenil #0" = 0
+	"Zerondion #0" = 0
+	"Daraztar #0" = 0
+	"Karzon #0" = 0
+	"Kavindil #0" = 0
+	"Taelvinor #0" = 0
+	"Vindarion #0" = 0
+	"Velorion #0" = 0
+	"Tezalindor #0" = 0
+	"Alaril #0" = 0
+	"Arzunil #0" = 0
+	"Zaravion #0" = 0
+	"Taemlathil #0" = 0
+	"Varzamion #0" = 0
+	"Dikalanor #0" = 0
+	"Takalanzil #0" = 0
+	"Zeharthil #0" = 0
+	"Thiribenor #0" = 0
+	"Kalrodion #0" = 0
+	"Alrondil #0" = 0
+	"Olorion #0" = 0
+
 	"Kalindel #0" = 0
 	"Narawen #0" = 0
-	"Erelaša #0" = 0
+	"Erelaï¿½a #0" = 0
 	#"Filinara #0" = 0
 	"Zelussa #0" = 0
 	"Imariel #0" = 0
@@ -147,7 +169,24 @@ monarch_names = {
 	"Alarawel #0" = 0
 	"Ladrindel #0" = 0
 	"Leslindel #0" = 0
-	
+
+	"Adralara #0" = 0
+	"Zaria #0" = 0
+	"Avalindel #0" = 0
+	"Velara #0" = 0
+	"Amalviel #0" = 0
+	"Alaril #0" = 0
+	"Rodenil #0" = 0
+	"Zunaria #0" = 0
+	"Hulzira #0" = 0
+	"Purila #0" = 0
+	"Tarhindel #0" = 0
+	"Talithiel #0" = 0
+	"Zelfinor #0" = 0
+	"Hazawen #0" = 0
+	"Faranizil #0" = 0
+	"Atriana #0" = 0
+	"Oloriza #0" = 0
 }
 
 leader_names = {
@@ -156,32 +195,19 @@ leader_names = {
     
     #Generic
     Thalanzuir Neztezuir Arfilzuir Kelazuir Elrazuir Kalinzuir Thirenzuir Varinzuir Panorzuir Denazuir Olozuir Zuirzuir Varinzuir Alarzuir Lezuir Istrazuir Kalizuir Varazuir Vinzuir Dalzuir Kerzuir Urzuir Trizuir Erzuir Erelzuir Andrelzuir Kamzuir Olozuir
+	Radinzuir Kantazuir Zadrathilzuir Vindarzuir Adrazuir Varzamzuir Faranzuir Zunazuir
 }
 
 ship_names = {
+
 	#Generic Bulwari
-	Adamant Advantage Adventure Advice Answer Ardent Armada Arrogant Assistance Association Assurance Atlas Audacious 
-	Bear "Black Galley" "Black Pinnace" "Black Blood" Captain Centurion Coronation Courage Crocodile Crown
-	Daisy Defence Defiance Devastation Diamond Director Dolphin Dragon Drake Dreadnaught Duke Duchess Eagle Excellent Exchange Expedition Experiment
-	Falcon Fame Favourite Fellowship Fleetwood Flight Flirt Formidable Forrester Fortitude Fortune Gillyflower Globe "Golden Horse" "Golden Lion" "Golden Phoenix" Goliath Goodgrace Governor
-	"Grand Mistress" "Great Bark" "Great Charity" "Great Galley" "Great Gift"  "Great Pinnace" "Great Zebra" "Green Dragon" Greyhound Griffin Guide "Half Moon" Hare Harpy Hawke Hazardous Heart
-	Hero Hope "Hope Bark" "Hopeful Adventure" Humble Hunter Illustrious Impregnable Increase Indefatigable Inflexible Intrepid Invincible "Less Bark" "Less Pinnace" "Less Zebra"
-	Lively Lizard Lion Magnanime Magnificent Majestic Makeshift Medusa Minotaur Moderate Monarch Moon Moor "New Bark" Ocean 
-	Pansy Panther Parrot Porcupine Powerful
-	Redoubtable Reformation Regent Renown Repulse Research Reserve Resistance Resolution Restoration Revenge 
-	Salamander Sandwich Sapphire Satisfaction Seahorse Search Sheerness Speaker Speedwell Sphinx Splendid Sprite Stag Standard Stately Success Sunlight Sunbeam Superb Swan Sweepstake Swift Swiftsure
-	Terrible Terror Thunderer Tiger Tremendous Trident Trinity Triumph Trusty
-	Unicorn Union Unity Valiant Vanguard Venerable Vestal Veteran Victor Vindictive Virtue Violet
-	Warrior Warspite Zealous
+	Akal-Wana Arfaya Arsaayaru Arsaginu Arsaruq Ayaru Ayaruella Betaayaru Bet-Ginu Betrruq Daq-Maï¿½ni Dasma Eluq-szel-Sahnu Ebur Ebur-Sur Ginu Ginupaï¿½ilu Ginuzan Galm Galm-szel-Wana Ginu-szel-Sahnu Ginu-szufal Surgumar Iwanayar Iwaginu Iwanruq Kalla Kasiya-Iï¿½iak Kuz Lib-Wana Lamas Lamas-Wana Nagiru Nagiru-szel-Szafal Nagiru-szel-Uma Naï¿½ru-rakad Nebu-ayar Nebu-Sur Panu-Arfaya Pettu Qaï¿½rih Qaï¿½rih-Wana Petszafal ï¿½ahkasiya ï¿½ebs-Ayaru ï¿½ebs-ginu ï¿½ebiruq ï¿½elu Sipar-hitu Siparakad Sipar-szufal Sur-Dasma Sureri Sur-gayal Sur-gaylia Sur-paï¿½ilu Sursur Sur-yim Tanuzi-pettu Uma Uturginu Utur-Iwanszufal Uma-Sur Udam-naï¿½ru Wana-bittu Wanabar Wanuartu Wana-ï¿½in Yesduma Yim Zama Zamakasya Ardin Azeriel Balraniï¿½ Dariaï¿½ Dariuï¿½ Gelkhan Gilberid Ilekar Kespir Merzallu Niraï¿½ Nerriï¿½ Nadir Perandiï¿½ ï¿½emgair ï¿½emuram ï¿½erfaz Tekhirn Xirek Zabril Anaisa Araxia Arusen Aï¿½kura Astaghik Ardana Ardana Durkana Enï¿½at Farana Farana Gilhana Hasmika Hripset Karzana Khadira Khallia Marï¿½an Nalara Nirissa Rexan Riï¿½at Siranik Sumeri ï¿½alanda ï¿½erfaz ï¿½uï¿½anik Tamaris Tuhina Urrat Yaranis Zabelis Akalu Anaisana Ardanisa Aï¿½kurana Baltura Durkanara Enï¿½ata Farnuï¿½a Fereï¿½ta Gilhanara Hasmikar Kaldanara Khadirana Khalliani Nalarina Nirissa Nylarana Parissia Parez Perizara Rexani Ruï¿½ana Ruï¿½ana Samira Samiria Sirani Suriyana Tamarisi Tafara ï¿½ahana ï¿½irina Tuhinara Urrata Yaranisa Zabelisa Zuhriya
+	#Cultural Provinces
+	Gemisle Katrano Sirafan Arekis Hopespeak Re-Uyel Azka-szel-Azka Zorntanas Yametï¿½es Medbahar Akrad-til Kaproya-Telen "Azka Barzil" Vernat Gordihr Gulangor Zagnabad Eduz-Wez Bazibar Agï¿½elum Baharzil Paï¿½ah Aqatbar Nisabat Arzdilsu Yesdbar Eduz-szel-Ninezim Fajabahar Pir-Ail Azka-Evran Qasnabor Naï¿½ru-ean Bahar-szel-Uak Akal-Uak Forramaz Tremo-Enkost Deï¿½kumar Habqez Birsartansbar Birsartenslib Imuluses Eonkavan Tunkalem Kaboustraz Ur-Monkande Daqelum Azkaï¿½ad Akurmbag Elusadul Tuklum "Elum Kuztanuz" "ï¿½ad Kuz" Barzilï¿½ad Kuzak Magair-ten-mar Garlas-kel Kihayanbar Lawaï¿½ï¿½ar Peruï¿½kam Aï¿½-mis Gelkalis Drolas Beteliï¿½ Drolaklum Kurmod Dromaz Annailsub Djinnkalis Brasan "Brasan Tanuz" Rakkubtu Uraï¿½um Aqatabtu Kadumar Medurubar "Suran Narit" Anzabad Ginerdu Zanakes Irrliam Idanaï¿½ "Aï¿½r Limeï¿½" Rakutmu "Salahad Gate" "ï¿½ad Sur" Kesudagka Ardubar Mibunaï¿½ru Anzakalis Harranbar Zanï¿½ap Surib Aklum Zagnuhar Betlibar "ï¿½ad Uraï¿½" Eliï¿½umu Grixekyr Arfajazan Elum-szel-Bazi Ulumu Ekluzagnu "Duklum Tanuz" Linkum Anzarzax Kumarkand "ï¿½ap Idiqlat" Xharraranaz Kalib Azanerdu Bulwar Eduz-Buranun Zanbar Grumar Harklum "Traz Suran" Ardu Xhurgrum Irkorzo Sareyand Dahain Duklum Azkabar Kuokrumar Markumar "Traz Buranun" "Ulmiï¿½ Idiqlat" Varamhar "Danaï¿½ Naza" Araï¿½bar Uqlum Kaliï¿½ad Setadazar "Danaï¿½ Aban" Mitiq Orean "Traz Avamezan" Kutiriq Erubas "Anzarim Avamezan" "Eduz-Vacyn" Kufu Durklum Utlazna Panubar "Panu Zankumar" Aï¿½ranaz Haï¿½r "Anzarim Suran" Sardazar Azka-Sur Saranaz Sarï¿½ad Ardumu Deohiq Trasenarbu Shibahurran Ebbuï¿½ubtu Tarnï¿½then Kotidï¿½rnor Mermigï¿½n ï¿½hï¿½rfo "Hero's Vale" Harnio Ianvirï¿½ri Zornkost Lankost Davharral Edeï¿½ukeru Subkaliss Piruharran ï¿½imlardu Saranza Ardulib Edenlil Larfï¿½ra Nurdazin Siphefirï¿½ri Istartï¿½vo Ergulagnu Kesud Daqalm
+	#CK3 Baronies
+	Dasmaï¿½ap Nithuelum Reï¿½ilan Eduz-Suraqqu Bittuathan Akurmilu Azkapaï¿½ Azkeru Eduz-Azka Azkalis Arzdisit Eduz-Arzdibaga Eduz-Ituq Kallabar Tilabar Baharthal Barziï¿½im Ereï¿½kand Arzdiqqu Keruï¿½amsi Eduz-Surellu Paï¿½ah Arsabittu Karhagï¿½ Baï¿½ilan
 	
-	Akal Flame Fire Blaze Burn "Burning Soul" Elephant
-
-	Survey Surveillance Cow Ox Bird Hawk Sovereign Emperor
-
-	Cleric Rogue Fighter Ranger Sorcerer Wizard Warlock Monk Druid
-	Strength Dexterity Constitution Intelligence Wisdom Charisma
 }
-
 army_names = {
 	"Eliznan Army" "Army of $PROVINCE$"
 }

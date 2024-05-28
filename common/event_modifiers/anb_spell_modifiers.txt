@@ -473,13 +473,13 @@ magic_estate_ward_3 = {
 }
 
 magic_estate_broad_ward_1 = {
-	local_defensiveness = 0.25
+	local_defensiveness = 0.15
 }
 magic_estate_broad_ward_2 = {
-	local_defensiveness = 0.5
+	local_defensiveness = 0.35
 }
 magic_estate_broad_ward_3 = {
-	local_defensiveness = 0.75
+	local_defensiveness = 0.50
 }
 
 magic_estate_scrying_military_intelligence_1 = {
@@ -656,4 +656,7 @@ military_engineer_homunculus = {
 quartermaster_homunculus = { 
 	reinforce_speed = 0.33
 	country_military_power = 1
+}
+allow_war_wizard_after_exile_delay = {
+	#set for 1 day, define_ruler_to_general does not work after a returning ruler who was a general until 1 day has passed or the game has been reloaded
 }

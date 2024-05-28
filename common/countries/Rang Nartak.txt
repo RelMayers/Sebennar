@@ -7,8 +7,8 @@ graphical_culture = indiangfx
 color = { 118  132  250 }
 
 historical_idea_groups = {
-	expansion_ideas
-	exploration_ideas
+	
+	
 	quantity_ideas
 	diplomatic_ideas	
 	offensive_ideas
@@ -220,8 +220,9 @@ monarch_names = {
 }
 
 leader_names = {
-	#The list needs at least six names to work properly
-	"- Elephant School" "- Elephant School" "- Elephant School" "- Elephant School" "- Elephant School" "- Elephant School"
+	#The list needs at least six names to work properly, and 10 to not complain in the error log
+	"- Elephant School" "- Elephant School" "- Elephant School" "- Elephant School" "- Elephant School"
+	"- Elephant School" "- Elephant School" "- Elephant School" "- Elephant School" "- Elephant School"
 }
 
 ship_names = {

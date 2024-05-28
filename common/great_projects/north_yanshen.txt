@@ -166,6 +166,7 @@ jiantsiang_temple_of_the_ascendant_soul = {
 						culture = east_harimari
 						culture_group = hobgoblin
 						culture_group = wuhyun
+						culture = serene_harimari
 					}
 			}
 			province_is_or_accepts_culture = yes
@@ -180,6 +181,7 @@ jiantsiang_temple_of_the_ascendant_soul = {
 						culture = east_harimari
 						culture_group = hobgoblin
 						culture_group = wuhyun
+						culture = serene_harimari
 					}
 			}
 			province_is_or_accepts_culture = yes

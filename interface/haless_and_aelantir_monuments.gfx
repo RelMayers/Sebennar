@@ -359,6 +359,18 @@ spriteType = {
         texturefile = "gfx//interface//great_projects//great_project_aoshan_hanging_temple.dds"
     }
 
+spriteType = {
+        name = "GFX_great_project_worm_pit"	
+        texturefile = "gfx//interface//great_projects//great_project_worm_pit.dds"
+    }
+	spriteType = {
+        name = "GFX_great_project_emberscar_dwarovar_tunnel"	
+        texturefile = "gfx//interface//great_projects//great_project_emberscar_dwarovar_tunnel.dds"
+    }
+	spriteType = {
+        name = "GFX_great_project_emberscar_command_tunnel"	
+        texturefile = "gfx//interface//great_projects//great_project_emberscar_command_tunnel.dds"
+    }
 ####################
 #Yanshen Coast
 ####################

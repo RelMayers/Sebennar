@@ -8,11 +8,11 @@ color = { 255  201  15 }
 
 
 historical_idea_groups = {
-	exploration_ideas
+	
 	maritime_ideas
 	economic_ideas
 	offensive_ideas
-	expansion_ideas
+	
 	quality_ideas	
 	administrative_ideas	
 	influence_ideas
@@ -143,8 +143,9 @@ monarch_names = {
 }
 
 leader_names = {
-	#The list needs at least six names to work properly
-	"- Humble Servant Path" "- Humble Servant Path" "- Humble Servant Path" "- Humble Servant Path" "- Humble Servant Path" "- Humble Servant Path"
+	#The list needs at least six names to work properly, and 10 to not complain in the error log
+	"- Humble Servant Path" "- Humble Servant Path" "- Humble Servant Path" "- Humble Servant Path" "- Humble Servant Path"
+	"- Humble Servant Path" "- Humble Servant Path" "- Humble Servant Path" "- Humble Servant Path" "- Humble Servant Path"
 }
 
 ship_names = {
@@ -155,7 +156,7 @@ ship_names = {
 	Chairacha Yotfa Worawongsa Chakkraphat Mahin
 	Sanpet Naresuan Ekathotsarot "Si Saowaphak"
 	Songtham Chehha "Somdet Phra" "Prasat Thong" Chai
-	Suthammaracha Narai Petratcha Süa Phumintharacha
+	Suthammaracha Narai Petratcha Sï¿½a Phumintharacha
 	Uthumpon Ekkathat
 	
 }

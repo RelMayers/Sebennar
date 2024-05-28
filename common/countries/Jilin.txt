@@ -7,8 +7,8 @@ graphical_culture = asiangfx
 color = { 211  85  4 }
 
 historical_idea_groups = {
-	expansion_ideas
-	exploration_ideas
+	
+	
 	quantity_ideas
 	diplomatic_ideas	
 	offensive_ideas
@@ -162,8 +162,9 @@ monarch_names = {
 }
 
 leader_names = {
-	#The list needs at least six names to work properly
-	"- Piercing Spear Way" "- Piercing Spear Way" "- Piercing Spear Way" "- Piercing Spear Way" "- Piercing Spear Way" "- Piercing Spear Way"
+	#The list needs at least six names to work properly, and 10 to not complain in the error log
+	"- Piercing Spear Way" "- Piercing Spear Way" "- Piercing Spear Way" "- Piercing Spear Way" "- Piercing Spear Way"
+	"- Piercing Spear Way" "- Piercing Spear Way" "- Piercing Spear Way" "- Piercing Spear Way" "- Piercing Spear Way"
 }
 
 ship_names = {

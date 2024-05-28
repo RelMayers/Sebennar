@@ -8,11 +8,11 @@ color = { 171  165  150 }
 
 
 historical_idea_groups = {
-	exploration_ideas
+	
 	maritime_ideas
 	economic_ideas
 	offensive_ideas
-	expansion_ideas
+	
 	quality_ideas	
 	administrative_ideas	
 	influence_ideas
@@ -24,7 +24,7 @@ historical_units = {
 monarch_names = {
 
 	#Generic Gnoll Name Lists
-	"Zokka #0" = 100
+	"Zokka #2" = 100
 	"Aaryz #0" = 1
 	"Arkez #0" = 1
 	"Brokx #0" = 1

@@ -65,21 +65,6 @@ country_event = {
 	trigger = {
 	tag = Z87
 	}
-    option = {
-        name = flavor_Akluztajo.3.a
-		remove_country_modifier = Z87_Pretender
-		add_country_modifier = {
-		name = Z87_semi_pacified_west
-		duration = -1
-		}
-		3010 = {
-			spawn_rebels = {
-				type = noble_rebels
-				size = 1
-			}
-		}
-	
-    }
 	option = {
         name = flavor_Akluztajo.3.b
 		remove_country_modifier = Z87_Pretender
@@ -107,20 +92,7 @@ is_triggered_only = yes
 trigger = {
 	tag = Z87
 }
- option = {
-		name = flavor_Akluztajo.4.a
-		remove_country_modifier = Z87_Pretender
-		add_country_modifier = {
-		name = Z87_semi_pacified_east
-		duration = -1
-		}
-		3041 = {
-			spawn_rebels = {
-				type = noble_rebels
-				size = 1
-			}
-		}
-    }
+
 	option = {
         name = flavor_Akluztajo.4.b
 		remove_country_modifier = Z87_Pretender
@@ -187,7 +159,8 @@ add_country_modifier = {
 name = Z87_dragon_kinship
 duration = -1
 }
-
+set_ruler_flag = dragon_kinshipper
+set_ruler_flag = immortal_ruler
 }
 
 option = {
@@ -198,4 +171,25 @@ duration = -1
 }
 
 }
+}
+country_event = {
+id = flavor_Akluztajo.8
+title = flavor_Akluztajo.8.t
+desc = flavor_Akluztajo.8.d
+picture = KOBOLD_HOARD_eventPicture
+fire_only_once = yes 
+trigger = {
+tag = Z87
+has_ruler_flag = dragon_kinshipper
+}
+option = {
+name = flavor_Akluztajo.8.a 
+4100 = {
+add_base_tax = 3
+add_base_production = 3
+add_base_manpower = 3
+}
+add_treasury = -1000
+}
+
 }

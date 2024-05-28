@@ -2,14 +2,14 @@
 
 graphical_culture = muslimgfx
 
-color = { 120  12  116 }
+color = { 125  19  106 }
 
 
 
 historical_idea_groups = {
 	economic_ideas
 	offensive_ideas
-	exploration_ideas
+	
 	defensive_ideas	
 	administrative_ideas	
 	maritime_ideas

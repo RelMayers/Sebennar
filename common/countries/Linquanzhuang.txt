@@ -7,11 +7,11 @@ graphical_culture = asiangfx
 color = { 126  131  206 }
 
 historical_idea_groups = {
-	exploration_ideas
+	
 	maritime_ideas
 	economic_ideas
 	offensive_ideas
-	expansion_ideas
+	
 	quality_ideas	
 	administrative_ideas	
 	influence_ideas
@@ -161,8 +161,9 @@ monarch_names = {
 }
 
 leader_names = {
-	#The list needs at least six names to work properly
-	"- Sacred Spring Order" "- Sacred Spring Order" "- Sacred Spring Order" "- Sacred Spring Order" "- Sacred Spring Order" "- Sacred Spring Order"
+	#The list needs at least six names to work properly, and 10 to not complain in the error log
+	"- Sacred Spring Order" "- Sacred Spring Order" "- Sacred Spring Order" "- Sacred Spring Order" "- Sacred Spring Order"
+	"- Sacred Spring Order" "- Sacred Spring Order" "- Sacred Spring Order" "- Sacred Spring Order" "- Sacred Spring Order"
 }
 
 ship_names = {

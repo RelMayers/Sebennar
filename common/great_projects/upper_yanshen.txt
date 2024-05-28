@@ -296,6 +296,7 @@ guhe_the_cheng_of_guhe = {
 						culture = goldscale_kobold
 						culture_group = hobgoblin
 						culture_group = wuhyun
+						culture = serene_harimari
 					}
 			}
 			province_is_or_accepts_culture = yes
@@ -311,6 +312,7 @@ guhe_the_cheng_of_guhe = {
 						culture = goldscale_kobold
 						culture_group = hobgoblin
 						culture_group = wuhyun
+						culture = serene_harimari
 					}
 			}
 			province_is_or_accepts_culture = yes

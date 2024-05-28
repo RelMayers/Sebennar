@@ -8,8 +8,8 @@ color = { 170 200 65 }
 
 
 historical_idea_groups = {
-	expansion_ideas
-	exploration_ideas
+	
+	
 	quantity_ideas
 	diplomatic_ideas	
 	offensive_ideas
@@ -147,7 +147,7 @@ leader_names = {
 	"of Khao Elnak" "of Kang Kaiden" "of Yemakai"
 	
 	#Province Neighbours
-	"of Azkare" "of Vai Ma" "of Lektonmai" "of Haiban" "of Phudban" "of Patu" "of Amrik" "of Ma Hoang" "of Xiadao" "of Sarisung"
+	"of Azkare" "of Vai Ma" "of Lektonmai" "of Haiban" "of Phudban" "of Patu" "of Amrik" "of Mo Hoang" "of Xiadao" "of Sarisung"
 
 	#Country Neighbours
 	
@@ -190,7 +190,7 @@ ship_names = {
 	Chairacha Yotfa Worawongsa Chakkraphat Mahin
 	Sanpet Naresuan Ekathotsarot "Si Saowaphak"
 	Songtham Chehha "Somdet Phra" "Prasat Thong" Chai
-	Suthammaracha Narai Petratcha Süa Phumintharacha
+	Suthammaracha Narai Petratcha Sï¿½a Phumintharacha
 	Uthumpon Ekkathat
 	
 }

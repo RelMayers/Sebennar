@@ -3,14 +3,14 @@
 
 graphical_culture = westerngfx
 
-color = { 121 150 137 }
+color = { 31 81 255 }
 
 
 
 historical_idea_groups = {
 	innovativeness_ideas
 	maritime_ideas
-	exploration_ideas
+	
 	economic_ideas
 	offensive_ideas
 	defensive_ideas	
