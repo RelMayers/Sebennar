@@ -352,7 +352,11 @@ custom_button = {
 		
 	}
 	effect = {
-		
+		hidden_effect = {
+			artifice_gui_tab_flag_clearing = yes
+			clr_country_flag = has_cultural_special_invention
+			clr_country_flag = has_unique_invention
+		}
 	}
 }
 
